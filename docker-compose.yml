@@ -1,0 +1,11 @@
+version: '3.5'
+
+services:
+    documize:
+        image: targodan/documize:latest
+        restart: always
+        ports:
+            - "80:80"
+        environment:
+            - DOCUMIZE_DB_TYPE: mysql
+            - DOCUMIZE_DB_CONNECTION: "user:password@tcp(localhost:3306)/dbname"
