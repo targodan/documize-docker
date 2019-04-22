@@ -16,8 +16,8 @@ services:
         ports:
             - "80:80"
         environment:
-            - DOCUMIZE_DB_TYPE: mysql
-            - DOCUMIZE_DB_CONNECTION: "user:password@tcp(localhost:3306)/dbname"
+            - DOCUMIZE_DB_TYPE=mysql
+            - DOCUMIZE_DB_CONNECTION="user:password@tcp(localhost:3306)/dbname"
 
 ```
 
