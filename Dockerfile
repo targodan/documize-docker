@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-ARG DOCUMIZE_VERSION=v2.4.0
+ARG DOCUMIZE_VERSION=v2.4.1
 
 RUN apk add --no-cache curl
 
